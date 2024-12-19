@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>P5.js Works - Jully Li</title>
+    <style>
+         @keyframes backgroundAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        body {
+            margin: 0;
+            font-family: serif;
+            background:  linear-gradient(45deg, #000000, #000146, #000000, #000e30);
+            background-size: 300% 300%;
+            animation: backgroundAnimation 10s ease infinite;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+            box-sizing: border-box;
+            min-height: 100vh;
+            justify-content: center;
+        }
+
+        .header {
+            width: 100%;
+            max-width: 1000px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+            padding: 0 1rem;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        .header a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1.2rem;
+            border: 2px solid #ffffff;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .header a:hover {
+            transform: scale(1.1);
+            color: rgb(255, 0, 60);
+        }
+
+        .work-options {
+            display: flex;
+            flex-direction: column;   
+            justify-content: center;  
+            align-items: center;     
+            gap: 2rem;               
+            max-width: 500px;         
+            width: 100%;
+            padding: 0 1rem;
+            box-sizing: border-box;
+            margin-top: 5rem;         
+        }
+
+        .work-option {
+            text-align: center;
+            font-size: 1.2rem;
+            border: 2px solid #fff;
+            padding: 1rem;
+            border-radius: 5px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            width: 100%;              
+            max-width: 300px;         
+        }
+
+        .work-option a {
+            color: #fff; /* Set the text color to white */
+            text-decoration: none;
+        }
+
+        .work-option:hover {
+            transform: scale(1.1);
+            color: rgb(255, 0, 60);
+        }
+
+        .footer {
+            margin-top: 2rem;
+            font-size: 1rem;
+            color: #ccc;
+        }
+
+        .footer a {
+            color: #ccc;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>P5.js Works</h1>
+        <a href="index.html">&#8592; Back to Home</a>
+    </div>
+
+    <div class="work-options">
+        <div class="work-option">
+            <a href="project1.html">Lost and Found</a>
+        </div>
+        <div class="work-option">
+            <a href="project2.html">Face Generator</a>
+        </div>
+        <div class="work-option">
+            <a href="project3.html">Experimental Clock</a>
+        </div>
+        <div class="work-option">
+            <a href="project4.html">Exquisite Corpse</a>
+        </div>
+        <div class="work-option">
+            <a href="project5.html">Optical Illusion</a>
+        </div>
+        <div class="work-option">
+            <a href="project6.html">Data Portrait</a>
+        </div>
+        <div class="work-option">
+            <a href="project7.html">Get Doggo</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© 2024 Jully Li | <a href="index.html">Home</a></p>
+    </div>
+
+</body>
+</html>
